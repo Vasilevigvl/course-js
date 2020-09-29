@@ -62,8 +62,8 @@ function isSomeTrue(array, fn) {
   }
 
   for (const i of array) {
-    if (!fn(array[i])) {
-      return false;
+    if (fn(i) === true) {
+      return true;
     }
   }
 
